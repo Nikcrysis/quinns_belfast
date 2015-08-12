@@ -76,6 +76,29 @@ td.cart_item {
 
 }
 
+.nav-btn{
+    color:#ffffff;
+    border: none;
+}
+
+.navbar-inverse {
+    background-color: black;
+    color: #ffffff;
+}
+
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+
+.navbar-inverse ul{
+    background-color: #000000;
+}
+
 div.contentm{
     max-width:960px;
     margin: 0 auto;
