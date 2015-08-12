@@ -173,28 +173,25 @@ background-image: none !important;
     bottom: -5px;
 }
 
-.offerings{
-    width:620px;
+.offering{
+    /*background-color: #c0c0c0;*/
+    max-width:620px;
     height: auto;
     margin: 0 auto;
     position: relative;
 }
 
-.first{
-    margin-left:0px !important;
-}
 
 .offer_item{
-    float:left;
     height:140px ;
     width: 140px;
     background-color: #f1ebeb;
     border-radius: 5px;
     margin:0;
-    margin-left:20px;
     z-index: 8;
     position: relative;
     text-align: center;
+    margin: 0 auto;
 }
 
 /*.circle{
@@ -387,6 +384,10 @@ hr {
 .get_social_item{
     float: left;
     margin: 0 5px;
+}
+
+.get_social_item.first{
+    margin-left:0px !important;
 }
 
 .footer_cont.main a{
