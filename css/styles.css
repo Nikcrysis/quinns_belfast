@@ -371,6 +371,31 @@ hr {
 }
 
 
+.quick_contactLink ul li .ssilka {
+    padding-left: 30px;
+}
+
+.quick_contactLink ul li {
+    padding: 0 0 7px 0;
+}
+
+.phone_link{
+    width: 100%;
+    height: 100%;
+    background: url(../src/phone%20copy.png) no-repeat scroll  transparent;
+}
+
+.map_link{
+    background: url(../src/marker.png) no-repeat scroll  transparent;
+
+}
+
+.mail_link{
+    background: url(../src/mail.png) no-repeat scroll  transparent;
+
+}
+
+
 
 .footer_cont.extra{
     padding-top: 10px;
