@@ -40,7 +40,7 @@
 
                    <section class="col-md-14 col-sm-14">
 
-                       <nav class="navbar navbar-inverse " id="Navigation">
+                       <nav class="navbar navbar-inverse " >
 
                            <div class="navbar-header nav-btn">
                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -54,7 +54,7 @@
                            </div>
 
 
-                           <div class='clearfix' style="width:550px; margin: 0 auto;">
+                           <div class='clearfix visible-xs' style="width:550px; margin: 0 auto;">
                                <ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                                    <li><a href="#">About Us</a></li>
@@ -64,6 +64,18 @@
                                    <li><a href="/projects/">FAQ</a></li>
                                    <li><a href="/contact/">Contacts</a></li>
                                  <!-- <p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>      -->                          </ul>
+                           </div>
+
+                           <div class='clearfix hidden-xs' id="Navigation" style="width:550px; margin: 0 auto; padding: 20px 0px">
+                               <ul class="nav navbar-nav collapse navbar-collapse">
+
+                                   <li><a href="#">About Us</a></li>
+                                   <li><a href="/#/">Artwork Guide</a></li>
+                                   <li><a href="/#/">Become a Partner</a></li>
+                                   <li><a href="/customers/">Quatation</a></li>
+                                   <li><a href="/projects/">FAQ</a></li>
+                                   <li><a href="/contact/">Contacts</a></li>
+                                   <!-- <p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>      -->                          </ul>
                            </div>
                        </nav>
 
@@ -82,14 +94,28 @@
                                </tr>
                            </table>
 
-                           
-
                           <!-- <ul>
                                <li class="items_link"><div class="ssilka">items($ 0.00)</div></li>
                                <li class="cart_link"><div class="ssilka">In Your Cart</div></li>
                            </ul> -->
                        </div>
                    </section>
+
+                   <div class="hidden" id="inline">
+                       <div class="col-md-2 col-sm-2"> </div>
+
+                       <div class="col-md-8 col-sm-8">
+                           <table class="tbl-line">
+                               <tr>
+                                   <td class="cart_item"><img src="src/cart_item.png"></td>
+                                   <td>items($ 0.00)</td>
+                                   <td><img src="src/cart.png"></td>
+                                   <td>In Your Cart</td>
+                               </tr>
+                           </table>
+                       </div>
+                   </div>
+
                </div>
            </div>
 
@@ -614,11 +640,14 @@
         if (scrolled > 106) {
             document.getElementById("MyElement").className = "hidden";
             document.getElementById("Cart").className = "hidden";
-            document.getElementById("Navigation").style.padding = "0 9px";
+            document.getElementById("Navigation").style.padding = "0px 0px";
+            document.getElementById("inline").className = "hidden-xs clearfix";
+
         } else {
             document.getElementById("MyElement").className = "col-md-5 col-sm-5 hidden-xs";
             document.getElementById("Cart").className = "col-md-5 col-sm-5 hidden-xs";
             document.getElementById("Navigation").style.padding = '20px 9px';
+            document.getElementById("inline").className = "hidden hidden-xs clearfix";
         }
         if (scrolled > 608) {
             document.getElementById("side_bar").className = "hidden";

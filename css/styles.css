@@ -38,14 +38,21 @@ header{
 .navbar{
     margin-bottom: 5px;
     min-height: 20px;
-    padding: 20px 0;
 }
 
-header .nav>li>a {
+.visible-xs .nav>li>a {
+    padding: 18px 9px;
+    color:white;
+
+}
+
+.hidden-xs .nav>li>a {
     padding: 0px 9px;
     color:white;
 
 }
+
+
 .nav>li>a:hover{
     background: black;
     color: #417a8b;
@@ -80,6 +87,15 @@ header .nav>li>a {
 table.tbl{
     width:130px;
     color:white;
+}
+
+table.tbl-line{
+    float: left;
+    color:white;
+}
+
+table.tbl-line td{
+    padding: 0 5px;
 }
 
 td {
