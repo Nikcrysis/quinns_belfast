@@ -19,76 +19,94 @@
 </head>
 <body>
 
+
 <div class="wrap">
 <div class="wrapper container-fluid">
 
-<header>
+<div class="wrap_head clearfix" id="wrap_head">
+
+
+<header class="navbar-fixed-top" id="head">
     <div class="container-fluid">
-        <div class="header">
-            <div class="row">
-                <aside class="col-md-5 col-sm-24 ">
-                    <div style="margin:0 auto; width:120px">
-                        <a href="#"><img src="src/logo.png" alt="Quinn's logo"></a>
-                    </div>
-                </aside>
-
-                <section class="col-md-14 col-sm-24">
-
-                    <nav class="navbar nav_xs navbar-inverse">
-
-                        <div class="navbar-header nav-btn">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand hidden-md hidden-sm  hidden-lg " href="#">Navigation</a>
-                        </div>
+           <div class="header">
+               <div class="row">
+                   <aside class="col-md-5 col-sm-5 hidden-xs" id="MyElement">
+                       <div style="margin:0 auto; width:120px" >
+                           <a href="#"><img src="src/logo.png" alt="Quinn's logo"></a>
+                       </div>
+                   </aside>
 
 
-                        <div style="width:550px; margin: 0 auto;">
-                            <ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="/#/">Artwork Guide</a></li>
-                                <li><a href="/#/">Become a Partner</a></li>
-                                <li><a href="/customers/">Quatation</a></li>
-                                <li><a href="/projects/">FAQ</a></li>
-                                <li><a href="/contact/">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+                   <section class="col-md-14 col-sm-14">
 
-                </section>
+                       <nav class="navbar navbar-inverse " id="Navigation">
 
-                <section class="col-md-5 col-sm-24">
-                    <div style="margin: 0 auto; width:130px;">
-                        <table class="tbl">
-                            <tr>
-                                <td class="cart_item"><img src="src\cart_item.png"></td>
-                                <td>items($ 0.00)</td>
-                            </tr>
-                            <tr>
-                                <td><img src="src\cart.png"></td>
-                                <td>In Your Cart</td>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
-            </div>
-        </div>
+                           <div class="navbar-header nav-btn">
+                               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                       data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                   <span class="sr-only">Toggle navigation</span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                               </button>
+                               <a class="navbar-brand hidden-md hidden-sm  hidden-lg " href="#">Navigation</a>
+                           </div>
+
+
+                           <div class='clearfix' style="width:550px; margin: 0 auto;">
+                               <ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                   <li><a href="#">About Us</a></li>
+                                   <li><a href="/#/">Artwork Guide</a></li>
+                                   <li><a href="/#/">Become a Partner</a></li>
+                                   <li><a href="/customers/">Quatation</a></li>
+                                   <li><a href="/projects/">FAQ</a></li>
+                                   <li><a href="/contact/">Contacts</a></li>
+                                 <!-- <p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>      -->                          </ul>
+                           </div>
+                       </nav>
+
+                   </section>
+
+                   <section class="col-md-5 col-sm-5 hidden-xs cart" id="Cart">
+                       <div style="margin: 0 auto; width:130px;">
+                           <table class="tbl">
+                               <tr>
+                                   <td class="cart_item"><img src="src/cart_item.png"></td>
+                                   <td>items($ 0.00)</td>
+                               </tr>
+                               <tr>
+                                   <td><img src="src/cart.png"></td>
+                                   <td>In Your Cart</td>
+                               </tr>
+                           </table>
+
+                           
+
+                          <!-- <ul>
+                               <li class="items_link"><div class="ssilka">items($ 0.00)</div></li>
+                               <li class="cart_link"><div class="ssilka">In Your Cart</div></li>
+                           </ul> -->
+                       </div>
+                   </section>
+               </div>
+           </div>
+
 
     </div>
 
 </header>
+</div>
 
 
 <div class="contentm">
+<div style="margin:0 auto; width:120px; height:56px; background-color: #000000" class="clearfix visible-xs" >
+    <a href="#"><img src="src/logo.png" alt="Quinn's logo"></a>
+</div>
 <div class="row">
-<aside class="col-md-5 col-sm-5 hidden-xs">
-    <button type="button" class="btn products" aria-label="Left Align">
+<aside class="col-md-5 col-sm-5 hidden-xs" id="side_bar">
+    <button type="button" class="btn products" aria-label="Left Align" >
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> Our Products</span>
     </button>
     <ul class="list-group submenu">
@@ -116,7 +134,7 @@
     </ul>
 </aside>
 
-<section class="col-md-19 col-xs-24 col-sm-19">
+<section class="col-md-19 col-xs-24 col-sm-19" id="content">
 
 <div class="mini_nav">
 
@@ -266,7 +284,7 @@
                             $20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn products popular_products_btn" onclick="javascript:change_head()">
                                 Buy Now
                             </button>
                         </div>
@@ -583,6 +601,36 @@
         </div>
     </div>
 </div>
+<script type='text/javascript'>
+    function test(){
+        $("#wrap_head").height($("#head").height());
+    }
+</script>
+
+<script>
+    window.onscroll = function() {
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        //document.getElementById('showScroll').innerHTML = scrolled + 'px';
+        if (scrolled > 106) {
+            document.getElementById("MyElement").className = "hidden";
+            document.getElementById("Cart").className = "hidden";
+            document.getElementById("Navigation").style.padding = "0 9px";
+        } else {
+            document.getElementById("MyElement").className = "col-md-5 col-sm-5 hidden-xs";
+            document.getElementById("Cart").className = "col-md-5 col-sm-5 hidden-xs";
+            document.getElementById("Navigation").style.padding = '20px 9px';
+        }
+        if (scrolled > 608) {
+            document.getElementById("side_bar").className = "hidden";
+            document.getElementById("content").className = "col-md-24 col-xs-24 col-sm-24";
+        } else{
+            document.getElementById("content").className = "col-md-19 col-xs-24 col-sm-19";
+            document.getElementById("side_bar").className = "col-md-5 col-sm-5 hidden-xs";
+        }
+
+    }
+</script>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
