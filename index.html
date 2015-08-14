@@ -19,543 +19,582 @@
 </head>
 <body>
 
+<!-- .wrap - all page without footer-->
+<div class="wrap" id="pageWithoutFooter">
 
-<div class="wrap">
-<div class="wrapper container-fluid" id="pageWithoutFooter">
-
+<!-- .wrap_head - all header-->
 <div class="wrap_head clearfix" id="wrapHead">
+    <header class="navbar-fixed-top" id="head">
+        <div class="container-fluid">
+            <!-- .header declares max-width 960px and centers the header elements-->
+            <div class="header">
+                <div class="row">
+
+                    <!--The logo in the header-->
+                    <aside class="col-md-5 col-sm-5 hidden-xs" id="myElement">
+                        <div style="margin:0 auto; width:120px; height:56px" id="smallLogo">
+                            <div>
+                                <a href="#">
+                                    <img src="src/logo.png" style="width: 100%; height: auto" alt="Quinn's logo">
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!--Parametrs for collapse of navigation bar for xs and sm devices-->
+                    <section class="col-md-14 col-sm-11" id="navBar">
+                        <nav class="navbar navbar-inverse ">
+                            <div class="navbar-header nav-btn">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand hidden-md hidden-sm  hidden-lg " href="#">Navigation</a>
+                            </div>
+
+                            <!--Nav for xs and sm devices-->
+                            <div class='clearfix visible-xs'>
+                                <ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="/#/">Artwork Guide</a></li>
+                                    <li><a href="/#/">Become a Partner</a></li>
+                                    <li><a href="/customers/">Quatation</a></li>
+                                    <li><a href="/projects/">FAQ</a></li>
+                                    <li><a href="/contact/">Contacts</a></li>
+                                    <!-- <p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>      -->
+                                </ul>
+                            </div>
+
+                            <!--Nav for md nad lg devices-->
+                            <div class='clearfix hidden-xs' id="navigation">
+                                <ul class="nav navbar-nav collapse navbar-collapse">
+
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="/#/">Artwork Guide</a></li>
+                                    <li><a href="/#/">Become a Partner</a></li>
+                                    <li><a href="/customers/">Quatation</a></li>
+                                    <li><a href="/projects/">FAQ</a></li>
+                                    <li><a href="/contact/">Contacts</a></li>
+                                    <!--Test of scroll script-->
+                                    <!--<p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>-->
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+
+                    <!--Buyers cart section for 0 scroll-->
+                    <section class="col-md-5 col-sm-5 hidden-xs cart" id="cart">
+                        <table class="tbl">
+                            <tr>
+                                <td class="cart_item">
+                                    <div class="items_count">0</div>
+                                </td>
+                                <td>items(£ 0.00)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="src/cart.png"></td>
+                                <td>In Your Cart</td>
+                            </tr>
+                        </table>
+                    </section>
 
 
-<header class="navbar-fixed-top" id="head">
-    <div class="container-fluid">
-           <div class="header">
-               <div class="row">
-                   <aside class="col-md-5 col-sm-5 hidden-xs" id="myElement">
-                       <div style="margin:0 auto; width:120px; height:56px" id="smallLogo" >
-                           <div >
-                           <a href="#"><img src="src/logo.png"  style="width: 100%; height: auto" alt="Quinn's logo"></a>
-                           </div>
-                       </div>
-                   </aside>
-
-                   <!--<aside class="hidden" id="SmallLogo" >
-                       <div style="margin:0 auto; width:60px;height: 40px" >
-                           <a href='#'><img src="src/logo_small.png" alt="Quinn's logo"></a>
-                       </div>
-                   </aside>-->
-
-
-
-                   <section class="col-md-14 col-sm-11" id="navBar">
-
-                       <nav class="navbar navbar-inverse " >
-
-                           <div class="navbar-header nav-btn">
-                               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                       data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                   <span class="sr-only">Toggle navigation</span>
-                                   <span class="icon-bar"></span>
-                                   <span class="icon-bar"></span>
-                                   <span class="icon-bar"></span>
-                               </button>
-                               <a class="navbar-brand hidden-md hidden-sm  hidden-lg " href="#">Navigation</a>
-                           </div>
+                    <!--Buyers cart section for 106+ scroll-->
+                    <div class="hidden" id="inline">
+                        <div class="col-md-5 col-sm-5" style="padding-top: 1px">
+                            <table class="tbl-line">
+                                <tr>
+                                    <td class="cart_item">
+                                        <div class="items_count">0</div>
+                                    </td>
+                                    <td>items(£ 0.00)</td>
+                                    <td><img src="src/cart.png"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
 
 
-                           <div class='clearfix visible-xs' style="width:550px; margin: 0 auto;">
-                               <ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!-- .content - all page without header and footer-->
+<div class="content">
 
-                                   <li><a href="#">About Us</a></li>
-                                   <li><a href="/#/">Artwork Guide</a></li>
-                                   <li><a href="/#/">Become a Partner</a></li>
-                                   <li><a href="/customers/">Quatation</a></li>
-                                   <li><a href="/projects/">FAQ</a></li>
-                                   <li><a href="/contact/">Contacts</a></li>
-                                 <!-- <p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>      -->                          </ul>
-                           </div>
+<!--Quinns logo for xs and sm devices-->
+<div style="margin:0 auto; width:120px; height:56px; background-color: #000000" class="clearfix visible-xs">
+    <a href="#"><img src="src/logo.png" alt="Quinn's logo"></a>
+</div>
 
-                           <div class='clearfix hidden-xs' id="navigation" style="width:550px; margin: 0 auto; padding: 20px 0px">
-                               <ul class="nav navbar-nav collapse navbar-collapse">
+<div class="row">
 
-                                   <li><a href="#">About Us</a></li>
-                                   <li><a href="/#/">Artwork Guide</a></li>
-                                   <li><a href="/#/">Become a Partner</a></li>
-                                   <li><a href="/customers/">Quatation</a></li>
-                                   <li><a href="/projects/">FAQ</a></li>
-                                   <li><a href="/contact/">Contacts</a></li>
-                                    <!--<p>В действии: Текущая прокрутка = <b id="showScroll">53px</b></p>-->                                </ul>
-                           </div>
-                       </nav>
+<!-- #sideBar - left-bar of content section-->
+<aside class="col-md-5 col-sm-5 hidden-xs" id="sideBar" style=" position:fixed;">
+<!--Our products blue button without action-->
+<button type="button" class="btn products" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
+                        Our Products
+                    </span>
+</button>
 
-                   </section>
+<!-- #accordion - container for left-bar dropdowns-->
+<ul class="list-group submenu" id="accordion">
 
-                   <section class="col-md-5 col-sm-5 hidden-xs cart" id="cart">
-                       <div style="margin: 0 auto; width:130px;">
-                           <table class="tbl">
-                               <tr>
-                                   <td class="cart_item">
-                                       <div class="items_count">0</div>
-                                   </td>
-                                   <td>items($ 0.00)</td>
-                               </tr>
-                               <tr>
-                                   <td><img src="src/cart.png"></td>
-                                   <td>In Your Cart</td>
-                               </tr>
-                           </table>
+<!--Every .panel declares button and its dropdown by data-target and id-->
+<div class="panel">
 
-                          <!-- <ul>
-                               <li class="items_link"><div class="ssilka">items($ 0.00)</div></li>
-                               <li class="cart_link"><div class="ssilka">In Your Cart</div></li>
-                           </ul> -->
-                       </div>
-                   </section>
+    <!--Button-->
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse1">
+            Business Stationery
+        </a>
+    </li>
 
-                   <div class="hidden" id="inline">
-                       <div class="col-md-5 col-sm-5"> </div>
+    <!--Its dropdown-->
+    <div id="collapse1" class="panel-collapse collapse">
 
-                       <div class="col-md-5 col-sm-5" style="padding-top: 1px">
-                           <table class="tbl-line">
-                               <tr>
-                                   <td class="cart_item">
-                                       <div class="items_count">0</div>
-                                   </td>
-                                   <td>items($ 0.00)</td>
-                                   <td><img src="src/cart.png"></td>
+        <ul class="" role="">
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=14">Stationery
+                Pack</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=15">A4
+                Letterheads</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=16">1/3 A4
+                Compliment Slips</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=17">Business
+                Cards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=18">Business
+                Cards Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=19">Business
+                Cards Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=20">A5
+                Letterheads</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=21">210x198
+                Letterheads</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=22">A6
+                Compliment Slips</a></li>
+        </ul>
+    </div>
+</div>
 
-                               </tr>
-                               </table>
-                       </div>
-                   </div>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse2">
+            Leaflets
+        </a>
+    </li>
 
-               </div>
-           </div>
+    <div id="collapse2" class="panel-collapse collapse">
+
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=25">55x85
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=26">A7
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=27">A6
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=28">A4
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=29">A5
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=30">210x198
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=31">A2
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=32">210x396
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=33">6pp A5
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=34">A3
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=35">6pp A4
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=36">1/3 A4
+                Leaflets</a></li>
+        </ul>
 
 
     </div>
-
-</header>
 </div>
 
 
-<div class="contentm">
-<div style="margin:0 auto; width:120px; height:56px; background-color: #000000" class="clearfix visible-xs" >
-    <a href="#"><img src="src/logo.png" alt="Quinn's logo"></a>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse3">
+            Flyers
+        </a>
+    </li>
+
+    <div id="collapse3" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=78">55x85
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=79">A7
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=80">A6
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=81">1/3 A4
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=82">A5
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=83">210x198
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=84">A4
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=85">210x396
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=86">6pp A5
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=87">A3
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=88">6pp A4
+                Flyers</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=89">A2
+                Flyers</a></li>
+        </ul>
+
+    </div>
+
 </div>
-<div class="row">
-<aside class="col-md-5 col-sm-5 hidden-xs" id="sideBar" style=" position:fixed;">
-    <button type="button" class="btn products" aria-label="Left Align" >
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> Our Products</span>
-    </button>
-    <ul class="list-group submenu" id="accordion">
-
-        <div class="panel">
-
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
-                    Business Stationery
-                </a>
-            </li>
-
-            <div id="collapse1" class="panel-collapse collapse">
-
-            <ul class="" role="">
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=14">Stationery
-                    Pack</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=15">A4
-                    Letterheads</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=16">1/3 A4
-                    Compliment Slips</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=17">Business
-                    Cards</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=18">Business
-                    Cards Gloss Laminated</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=19">Business
-                    Cards Matt Laminated</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=20">A5
-                    Letterheads</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=21">210x198
-                    Letterheads</a></li>
-                <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=22">A6
-                    Compliment Slips</a></li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
-                    Leaflets
-                </a>
-            </li>
-
-            <div id="collapse2" class="panel-collapse collapse">
-
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=25">55x85
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=26">A7
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=27">A6
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=28">A4
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=29">A5
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=30">210x198
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=31">A2
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=32">210x396
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=33">6pp A5
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=34">A3
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=35">6pp A4
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=36">1/3 A4
-                        Leaflets</a></li>
-                </ul>
 
 
-            </div>
-        </div>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse4">
+            Promo Cards
+        </a>
+    </li>
+
+    <div id="collapse4" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=73">1/3 A4
+                Promo Cards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=74">210x198
+                Promo Cards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=75">A4 Promo
+                Cards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=76">A5 Promo
+                Cards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=77">A6 Promo
+                Cards</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse5">
+            Posters
+        </a>
+    </li>
+
+    <div id="collapse5" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=37">A4
+                Posters</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=38">A3
+                Posters</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=39">A2
+                Posters</a></li>
+        </ul>
+    </div>
+</div>
 
 
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse6">
+            Postcards
+        </a>
+    </li>
+
+    <div id="collapse6" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=42">A6
+                Postcards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=43">1/3 A4
+                Postcards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=44">A5
+                Postcards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=45">210x198
+                Postcards</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=46">A4
+                Postcards</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse7">
+            Presentation Folders
+        </a>
+    </li>
+
+    <div id="collapse7" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=47">A5
+                Oversized Folders</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=48">A5
+                Oversized Folders Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=49">A5
+                Oversized Folders Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=50">A5
+                Oversized Folders Printed On B3</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=51">A5
+                Oversized Folders Printed on B3 Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=52">A5
+                Oversized Folders Printed on B3 Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=53">A4
+                Oversized Folders</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=54">A4
+                Oversized Folders Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=55">A4
+                Oversized Folders Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=56">A4
+                Oversized Folders Printed On B2</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=57">A4
+                Oversized Folders Printed On B2 Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=58">A4
+                Oversized Folders Printed On B2 Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=59">6pp A4
+                Folders</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=60">6pp A4
+                Folders Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=61">6pp A4
+                Folders Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=62">6pp A4
+                Oversized Folders Printed On B2</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=63">6pp A4
+                Oversized Folders Printed On B2 Matt Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=64">6pp A4
+                Oversized Folders Printed On B2 Gloss Laminated</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse8">
+            A5 Booklets
+        </a>
+    </li>
 
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
-                    Flyers
-                </a>
-            </li>
+    <div id="collapse8" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=65">A5
+                Booklets Self Cover</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=66">A5
+                Booklets Heavy Cover</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=67">A5
+                Booklets Heavy Cover Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=68">A5
+                Booklets Heavy Cover Matt Laminated</a></li>
+        </ul>
+    </div>
+</div>
 
-            <div id="collapse3" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=78">55x85
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=79">A7
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=80">A6
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=81">1/3 A4
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=82">A5
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=83">210x198
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=84">A4
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=85">210x396
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=86">6pp A5
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=87">A3
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=88">6pp A4
-                        Flyers</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=89">A2
-                        Flyers</a></li>
-                </ul>
-
-            </div>
-
-        </div>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse9">
+            A4 Booklets
+        </a>
+    </li>
 
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
-                    Promo Cards
-                </a>
-            </li>
-
-            <div id="collapse4" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=73">1/3 A4
-                        Promo Cards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=74">210x198
-                        Promo Cards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=75">A4 Promo
-                        Cards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=76">A5 Promo
-                        Cards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=77">A6 Promo
-                        Cards</a></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">
-                    Posters
-                </a>
-            </li>
-
-            <div id="collapse5" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=37">A4
-                        Posters</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=38">A3
-                        Posters</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=39">A2
-                        Posters</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="collapse9" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=69">A4
+                Booklets Self Cover</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=70">A4
+                Booklets Heavy Cover</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=71">A4
+                Booklets Heavy Cover Gloss Laminated</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=72">A4
+                Booklets Heavy Cover Matt Laminated</a></li>
+        </ul>
+    </div>
 
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse6">
-                    Postcards
-                </a>
-            </li>
+</div>
 
-            <div id="collapse6" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=42">A6
-                        Postcards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=43">1/3 A4
-                        Postcards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=44">A5
-                        Postcards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=45">210x198
-                        Postcards</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=46">A4
-                        Postcards</a></li>
-                </ul>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse10">
+            Digital Leaflets
+        </a>
+    </li>
 
-            </div>
-        </div>
+    <div id="collapse10" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=94">55x85mm
+                Digital Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=95">A7 Digital
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=96">A6 Digital
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=97">1/3 A4
+                Digital Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=98">A5 Digital
+                Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=100">210x396mm
+                Digital Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=101">210x198mm
+                Digital Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=102">A4
+                Digital Leaflets</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=103">A3
+                Digital Leaflets</a></li>
+        </ul>
+    </div>
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse7">
-                    Presentation Folders
-                </a>
-            </li>
+</div>
 
-            <div id="collapse7" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=47">A5
-                        Oversized Folders</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=48">A5
-                        Oversized Folders Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=49">A5
-                        Oversized Folders Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=50">A5
-                        Oversized Folders Printed On B3</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=51">A5
-                        Oversized Folders Printed on B3 Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=52">A5
-                        Oversized Folders Printed on B3 Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=53">A4
-                        Oversized Folders</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=54">A4
-                        Oversized Folders Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=55">A4
-                        Oversized Folders Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=56">A4
-                        Oversized Folders Printed On B2</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=57">A4
-                        Oversized Folders Printed On B2 Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=58">A4
-                        Oversized Folders Printed On B2 Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=59">6pp A4
-                        Folders</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=60">6pp A4
-                        Folders Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=61">6pp A4
-                        Folders Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=62">6pp A4
-                        Oversized Folders Printed On B2</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=63">6pp A4
-                        Oversized Folders Printed On B2 Matt Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=64">6pp A4
-                        Oversized Folders Printed On B2 Gloss Laminated</a></li>
-                </ul>
-            </div>
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse11">
+            A5 Digital Leaflets
+        </a>
+    </li>
 
-        </div>
+    <div id="collapse11" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=92">A5 Digital
+                Booklets Self Cover</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=93">A5 Digital
+                Booklets Heavy Cover</a></li>
+        </ul>
+    </div>
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse8">
-                    A5 Booklets
-                </a>
-            </li>
+</div>
 
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse12">
+            A4 Digital Leaflets
+        </a>
+    </li>
 
-            <div id="collapse8" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=65">A5
-                        Booklets Self Cover</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=66">A5
-                        Booklets Heavy Cover</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=67">A5
-                        Booklets Heavy Cover Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=68">A5
-                        Booklets Heavy Cover Matt Laminated</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="collapse12" class="panel-collapse collapse">
+        <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=90">A4 Digital
+            Booklets Self Cover</a></li>
+        <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=91">A4 Digital
+            Booklets Heavy Cover</a></li>
+    </div>
 
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse9">
-                    A4 Booklets
-                </a>
-            </li>
+</div>
 
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse13">
+            Banners
+        </a>
+    </li>
 
-            <div id="collapse9" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=69">A4
-                        Booklets Self Cover</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=70">A4
-                        Booklets Heavy Cover</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=71">A4
-                        Booklets Heavy Cover Gloss Laminated</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=72">A4
-                        Booklets Heavy Cover Matt Laminated</a></li>
-                </ul>
-            </div>
+    <div id="collapse13" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=104">Banners
+                4ft x 3ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=105">Banners
+                6ft x 2ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=106">Banners
+                8ft x 2ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=107">Banners
+                8ft x 3ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=108">Banners
+                12ft x 3ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=109">Banners
+                12ft x 4ft</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=110">Banners
+                1m x 1m</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=111">Banners
+                2m x 1m</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=112">Banners
+                3m x 1m</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=113">Banners
+                2m x 1.5m</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=114">Banners
+                3m x 1.5m</a></li>
+            <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=115">Banners
+                4m x 1.5m</a></li>
+        </ul>
+    </div>
 
+</div>
 
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">
-                    Digital Leaflets
-                </a>
-            </li>
-
-            <div id="collapse10" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=94">55x85mm
-                        Digital Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=95">A7 Digital
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=96">A6 Digital
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=97">1/3 A4
-                        Digital Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=98">A5 Digital
-                        Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=100">210x396mm
-                        Digital Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=101">210x198mm
-                        Digital Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=102">A4
-                        Digital Leaflets</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=103">A3
-                        Digital Leaflets</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11">
-                    A5 Digital Leaflets
-                </a>
-            </li>
-
-            <div id="collapse11" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=92">A5 Digital
-                        Booklets Self Cover</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=93">A5 Digital
-                        Booklets Heavy Cover</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse12">
-                    A4 Digital Leaflets
-                </a>
-            </li>
-
-            <div id="collapse12" class="panel-collapse collapse">
-
-            </div>
-
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse13">
-                    Banners
-                </a>
-            </li>
-
-            <div id="collapse13" class="panel-collapse collapse">
-                <ul>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=104">Banners
-                        4ft x 3ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=105">Banners
-                        6ft x 2ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=106">Banners
-                        8ft x 2ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=107">Banners
-                        8ft x 3ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=108">Banners
-                        12ft x 3ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=109">Banners
-                        12ft x 4ft</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=110">Banners
-                        1m x 1m</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=111">Banners
-                        2m x 1m</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=112">Banners
-                        3m x 1m</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=113">Banners
-                        2m x 1.5m</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=114">Banners
-                        3m x 1.5m</a></li>
-                    <li class="list-group-item-drop"><a class="profile-link" href="/catalog/list?id=115">Banners
-                        4m x 1.5m</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="panel">
-            <li class="list-group-item">
-                <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse14">
-                    Calendars
-                    <div class="new">New</div>
-                </a>
-            </li>
-
-            <div id="collapse14" class="panel-collapse collapse">
-
-            </div>
-
-        </div>
-
-        <li class="list-group-item"><a href="#">Greeting Cards</a>
-
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse14">
+            Calendars
             <div class="new">New</div>
-        </li>
-    </ul>
+        </a>
+    </li>
+
+    <div id="collapse14" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop">
+                <a class="profile-link" href="/catalog/list?id=104">
+                    Nothing yet Calenders
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="panel">
+    <li class="list-group-item">
+        <a class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapse15">
+            Greeting Cards
+            <div class="new">New</div>
+        </a>
+    </li>
+
+    <div id="collapse15" class="panel-collapse collapse">
+        <ul>
+            <li class="list-group-item-drop">
+                <a class="profile-link" href="/catalog/list?id=104">
+                    Nothing yet Greeting Cards
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</ul>
 </aside>
 
+<!-- Empty static column with the width of side bar -->
 <div class="col-md-5 col-sm-5"></div>
+
+
+<!-- Begining of main content-->
 <section class="col-md-19 col-xs-24 col-sm-19" id="content">
 
+<!-- Mini navigation-->
 <div class="mini_nav">
-
     <ul class="nav nav-pills nav-justified">
         <li role="presentation"><a href="#"><img src="src/help.png" alt=""/> Help Online</a></li>
         <li role="presentation"><a href="#"><img src="src/phone.png" alt=""/> 028 9032 3552</a></li>
@@ -563,16 +602,9 @@
         <li role="presentation"><a href="#"><img src="src/pen.png" alt=""/> Get Quote</a></li>
     </ul>
 </div>
-<!--
-<table>
-    <tr>
-        <td><img src="src/help.png" alt=""/> Help Online</a></td>
-        <td><img src="src/phone.png" alt=""/>028 9032 3552</a></td>
-        <td><img src="src/user.png" alt=""/>Login/Register</a></td>
-        <td><img src="src/pen.png" alt=""/>Get Quote</a></td>
-    </tr>
-</table>
--->
+
+
+<!-- Begin of slider-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -583,12 +615,11 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-
         <div class="item active">
             <img src="src/slider/slide.png" alt="...">
 
             <div class="carousel-caption">
-                ...
+                Slide 1
             </div>
         </div>
 
@@ -596,7 +627,7 @@
             <img src="src/slider/slide.png" alt="...">
 
             <div class="carousel-caption">
-                ...
+                Slide 2
             </div>
         </div>
 
@@ -604,10 +635,9 @@
             <img src="src/slider/slide.png" alt="...">
 
             <div class="carousel-caption">
-                ...
+                Slide 3
             </div>
         </div>
-
     </div>
 
 
@@ -624,11 +654,12 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+<!-- End of slider-->
 
+<!--Begin of under slide menu-->
 <div class="offering clearfix ">
-<div class="row-fluid clearfix">
-
-
+    <div class="row-fluid clearfix">
+        <!--Four offering items -->
         <div class="col-md-6 col-sm-6 col-xs-6 no-pad">
             <div class="offer_item">
                 <div class="circle"><img src="src/request.png" alt=""/>
@@ -678,18 +709,15 @@
     </div>
 
 </div>
-<div style="clear: both"></div>
 
 
-
+<!-- Popular products-->
 <div class="most_popular_products clearfix">
     <div class="popular_header">
         <h4><span>MOST POPULAR PRODUCTS</span></h4>
     </div>
 
-
     <div class="popular_products_cont">
-
         <div class="row_cont">
             <div class="row-fluid .clearfix">
                 <div class="col-xs-6 col-sm-6 col-md-6">
@@ -699,10 +727,10 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn" onclick="javascript:change_head()">
+                            <button type="button" class="btn products popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -715,7 +743,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -731,7 +759,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -747,7 +775,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -763,7 +791,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -779,7 +807,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -795,7 +823,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -811,7 +839,7 @@
                         </div>
                         <hr class="line">
                         <div class="cost">
-                            $20.00
+                            £20.00
                         </div>
                         <div class="popular_btn">
                             <button type="button" class="btn products popular_products_btn">
@@ -826,84 +854,67 @@
     </div>
 </div>
 
-    <div class="desc">
-        <h4><span>LOREM IPSUM</span></h4>
-        <div class="desc_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros metus,
-            porttitor ut augue ac, condimentum mollis lacus. Aliquam tincidunt
-            maximus laoreet. Nulla vestibulum faucibus sagittis. Cras molestie
-            magna ac eleifend tincidunt. Integer ac varius metus. Ut ac dignissim
-            massa. Pellentesque blandit, turpis auctor molestie facilisis, velit odio
-            feugiat urna, eu aliquam enim nisl at dolor. Pellentesque luctus
-            ultrices urna, sit amet posuere lorem feugiat viverra. Donec dolor
-            enim, blandit in metus vel, congue molestie orci. Donec pulvinar
-            nisi tellus. Nunc turpis nisi, rhoncus at ante at, ultricies varius
-            odio. Vestibulum at magna dignissim risus pellentesque iaculis eget
-            id ipsum. Sed lobortis elit sagittis malesuada ullamcorper. Fusce
-            mattis metus ut leo vestibulum varius.</p>
 
-            <p>Nullam accumsan dolor augue, a maximus eros maximus a. Donec quis lorem
-            felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Ut mollis hendrerit accumsan. In venenatis mi
-            erat, ut dictum dui porta at. Nunc fermentum lobortis ligula non
-            blandit. Pellentesque ligula nibh, commodo at pellentesque sit amet,
-            lacinia sed quam. Etiam accumsan, lacus in fringilla accumsan, nunc
-            metus ullamcorper felis, sit amet sodales ex orci vel ex. Donec arcu
-            orci, accumsan vitae placerat ac, ultrices a lorem.</p>
-        </div>
+<!-- Description block-->
+<div class="desc">
+    <h4><span>Online Printing Management System</span></h4>
+
+    <div class="desc_text">
+        <p>With our fast ONLINE ORDER and PortalX Online Approval you can upload your artwork to Quinn's Belfast 24
+            hours a day. Our Delano system is a file delivery and approval tool that is integrated with our pre-press
+            department and our Apogee X pre-press system. This gives back complete control to you, the customer. Our web
+            based system operates 24 hours per day, significantly improving proof approval and turn around.</p>
     </div>
+</div>
 
-    <div class="choose_us">
-        <h4><span>WHY CHOOSE US ?</span></h4>
+<div class="choose_us clearfix">
+    <h4><span>WHY CHOOSE US ?</span></h4>
 
-        <div class="row-fluid clearfix">
-            <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
-                <div class=""><img src="src/service.png" alt=""/>
-                </div>
-                <div class="choose_us_text">
-                    <div class="bold">
-                        COMPLETE PRINTING SERVICE
-                    </div>
+    <div class="row-fluid clearfix">
+        <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
+            <div class=""><img src="src/service.png" alt=""/>
+            </div>
+            <div class="choose_us_text">
+                <div class="bold">
+                    COMPLETE PRINTING SERVICE
                 </div>
             </div>
-
-            <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
-                <div class=""><img src="src/money.png" alt=""/>
-                </div>
-                <div class="choose_us_text">
-                    <div class="bold">
-                        PRICING
-                    </div>
-                </div>
-            </div>
-
-            <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
-                <div class=""><img src="src/time.png" alt=""/>
-                </div>
-                <div class="choose_us_text">
-                    <div class="bold">
-                        LEAD TIMES
-                    </div>
-                </div>
-            </div>
-
-            <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
-                <div class=""><img src="src/car.png" alt=""/>
-                </div>
-                <div class="choose_us_text">
-                    <div class="bold">
-                        FREE DELIVERY
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <div style="clear: both"></div>
+
+        <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
+            <div class=""><img src="src/money.png" alt=""/>
+            </div>
+            <div class="choose_us_text">
+                <div class="bold">
+                    PRICING
+                </div>
+            </div>
+        </div>
+
+        <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
+            <div class=""><img src="src/time.png" alt=""/>
+            </div>
+            <div class="choose_us_text">
+                <div class="bold">
+                    LEAD TIMES
+                </div>
+            </div>
+        </div>
+
+        <div class="choose_us_item col-xs-6 col-sm-6 col-md-6">
+            <div class=""><img src="src/car.png" alt=""/>
+            </div>
+            <div class="choose_us_text">
+                <div class="bold">
+                    FREE DELIVERY
+                </div>
+            </div>
+        </div>
 
     </div>
+</div>
 
 </section>
-</div>
 </div>
 </div>
 </div>
@@ -944,36 +955,40 @@
                     <div>
                         <div class="bold"><p>Get In Touch</p></div>
 
-                       <!-- <table>
-                            <tr>
-                                <td><img src="src/marker.png" alt=""/></td>
-                                <td>
-                                    Units 1-8 RJ Hall Industrial Estate, Wilson Street, Belfast BT13 2GA, N.Ireland
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="src/phone%20copy.png" alt=""/></td>
-                                <td>
+                        <!-- <table>
+                             <tr>
+                                 <td><img src="src/marker.png" alt=""/></td>
+                                 <td>
+                                     Units 1-8 RJ Hall Industrial Estate, Wilson Street, Belfast BT13 2GA, N.Ireland
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td><img src="src/phone%20copy.png" alt=""/></td>
+                                 <td>
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="src/mail.png" alt=""/></td>
-                                <td></td>
-                            </tr>
-                        </table> -->
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td><img src="src/mail.png" alt=""/></td>
+                                 <td></td>
+                             </tr>
+                         </table> -->
                         <div class="quick_contactLink">
                             <ul>
                                 <li class="map_link">
-                                        <div class="ssilka">
-                                            <a href="">
-                                                Units 1-8 RJ Hall Industrial Estate, Wilson
-                                                Street, Belfast BT13 2GA, N.Ireland
-                                            </a>
-                                        </div>
+                                    <div class="ssilka">
+                                        <a href="">
+                                            Units 1-8 RJ Hall Industrial Estate, Wilson
+                                            Street, Belfast BT13 2GA, N.Ireland
+                                        </a>
+                                    </div>
                                 </li>
-                                <li class="phone_link"><div class="ssilka">028 9032 3552</div></li>
-                                <li class="mail_link"><div class="ssilka"> quotes@quinnstheprinters.com </div></li>
+                                <li class="phone_link">
+                                    <div class="ssilka">028 9032 3552</div>
+                                </li>
+                                <li class="mail_link">
+                                    <div class="ssilka"> quotes@quinnstheprinters.com</div>
+                                </li>
 
                             </ul>
                         </div>
@@ -988,7 +1003,8 @@
                         <div class="bold"><p>Get Social</p></div>
 
                         <div class="get_social">
-                            <div class="get_social_item first"><a href="#"><img src="src/facebook.png" alt=""/></a></div>
+                            <div class="get_social_item first"><a href="#"><img src="src/facebook.png" alt=""/></a>
+                            </div>
                             <div class="get_social_item"><a href="#"><img src="src/linkedin.png" alt=""/></a></div>
                             <div class="get_social_item"><a href="#"><img src="src/twitter.png" alt=""/></a></div>
                             <div class="get_social_item"><a href="#"><img src="src/pint.png" alt=""/></a></div>
@@ -1017,65 +1033,47 @@
 </div>
 
 
-
-
-
 <script type='text/javascript'>
-    function test(){
-        $("#wrap_head").height($("#head").height());
+    function test() {
+        £("#wrap_head").height(£("#head").height());
     }
 </script>
 
 <script>
-    window.onscroll = function() {
+    window.onscroll = function () {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        if(he!=-20 & he!=0 & he!=$("#side_bar").height() ){
-            var he=$("#side_bar").height();
+        if (he != -20 & he != 0 & he != $("#side_bar").height()) {
+            var he = $("#side_bar").height();
         }
         //document.getElementById('showScroll').innerHTML = he + 'px';
         if (scrolled > 106) {
-            //document.getElementById("MyElement").className = "hidden";
-            //document.getElementById("NavBar").className = " col-md-14 col-sm-11";
-            document.getElementById("sideBar").style.margin="-30px 0px 0px 0px";
-            document.getElementById("smallLogo").style.width="80px";
-            document.getElementById("smallLogo").style.height="37.5px";
+            document.getElementById("sideBar").style.margin = "-30px 0px 0px 0px";
+            document.getElementById("smallLogo").style.width = "80px";
+            document.getElementById("smallLogo").style.height = "37.5px";
             //document.getElementById("SmallLogo").className = "col-md-6 col-sm-3 hidden-xs";
             document.getElementById("cart").className = "hidden";
             document.getElementById("navigation").style.padding = "7px 0px 0px 0px";
             document.getElementById("inline").className = "hidden-xs clearfix";
 
         } else {
-            //document.getElementById("MyElement").className = "col-md-5 col-sm-5 hidden-xs";
-            //document.getElementById("NavBar").className = "col-md-8 col-sm-11";
-            //document.getElementById("SmallLogo").className = "hidden";
-            document.getElementById("sideBar").style.margin="0px 0px 0px 0px";
-            document.getElementById("smallLogo").style.width="120px";
-            document.getElementById("smallLogo").style.height="56px";
+            document.getElementById("sideBar").style.margin = "0px 0px 0px 0px";
+            document.getElementById("smallLogo").style.width = "120px";
+            document.getElementById("smallLogo").style.height = "56px";
             document.getElementById("cart").className = "col-md-5 col-sm-5 hidden-xs cart";
             document.getElementById("navigation").style.padding = '20px 0px';
             document.getElementById("inline").className = "hidden hidden-xs clearfix";
         }
 
-        if ($("#sideBar").height()+scrolled +80 > $("#pageWithoutFooter").height()) {
+        if ($("#sideBar").height() + scrolled + 40 > $("#pageWithoutFooter").height()) {
 
-            if (document.getElementById("sideBar").style.position == "fixed"){
-                document.getElementById("sideBar").style.position = "relative";
+            if (document.getElementById("sideBar").style.position == "fixed") {
+                document.getElementById("sideBar").style.position = "absolute";
                 document.getElementById("sideBar").style.top = scrolled + 'px';
             }
         } else {
             document.getElementById("sideBar").style.position = "fixed";
-            document.getElementById("sideBar").style.top =null;
+            document.getElementById("sideBar").style.top = null;
         }
-
-
-        /*if (scrolled > he & scrolled > 653) {
-            document.getElementById("side_bar").className = "hidden";
-            document.getElementById("content").className = "col-md-24 col-xs-24 col-sm-24";
-        } else{
-            document.getElementById("content").className = "col-md-19 col-xs-24 col-sm-19";
-            document.getElementById("side_bar").className = "col-md-5 col-sm-5 hidden-xs";
-        }*/
-
     }
 </script>
 

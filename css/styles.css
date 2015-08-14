@@ -19,15 +19,15 @@ ul
 .wrap_head{
     position: relative;
     overflow: hidden;
-    height: 55px;
-    margin-bottom: 15px;
+    height: 70px;
+    margin-bottom: 20px;
 
 }
 
 
 header{
     background-color: black;
-    /*padding: 10px 0;*/
+    padding: 10px 0;
 }
 
 .header{
@@ -43,6 +43,17 @@ header{
 
 #navBar{
     padding-left: 45px;
+}
+
+#navigation{
+    width:550px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+#cart{
+    margin: 0 auto;
+    width:130px;
 }
 
 .visible-xs .nav>li>a {
@@ -156,14 +167,14 @@ td.cart_item {
     background-color: #000000;
 }
 
-.contentm{
+.content{
     max-width:960px;
     margin: 0 auto;
     /*margin-top: 10px;*/
 }
 
 
-.contentm aside{
+.content aside{
 
     /*min-height: 100%;*/
     display: block;
@@ -182,13 +193,17 @@ td.cart_item {
     padding: 0;
 }
 
-.contentm section{
+.content section{
     /*height:650px;*/
     /*background-color: #398439;*/
 }
 
 .mini_nav{
     margin: 10px 0;
+}
+
+.list-group{
+    padding-left: 15px;
 }
 
 
