@@ -594,12 +594,20 @@
 <section class="col-md-19 col-xs-24 col-sm-19" id="content">
 
 <!-- Mini navigation-->
-<div class="mini_nav">
+<div class="mini_nav row-fluid">
     <ul class="nav nav-pills nav-justified">
-        <li role="presentation"><a href="#"><img src="src/help.png" alt=""/> Help Online</a></li>
-        <li role="presentation"><a href="#"><img src="src/phone.png" alt=""/> 028 9032 3552</a></li>
-        <li role="presentation"><a href="#"><img src="src/user.png" alt=""/> Login/Register</a></li>
-        <li role="presentation"><a href="#"><img src="src/pen.png" alt=""/> Get Quote</a></li>
+        <div class="col-md-6">
+            <li role="presentation"><a href="#"><img src="src/help.png" alt=""/> <div class="mini_nav_item">Help Online</div></a></li>
+        </div>
+        <div class="col-md-6">
+            <li role="presentation"><a href="#"><img src="src/phone.png" alt=""/> <div class="mini_nav_item">028 9032 3552</div></a></li>
+        </div>
+        <div class="col-md-6">
+            <li role="presentation"><a href="#"><img src="src/user.png" alt=""/> <div class="mini_nav_item">Login/Register</div></a></li>
+        </div>
+        <div class="col-md-6">
+            <li role="presentation"><a href="#"><img src="src/pen.png" alt=""/> <div class="mini_nav_item">Get Quote</div></a></li>
+        </div>
     </ul>
 </div>
 
@@ -717,7 +725,6 @@
         <h4><span>MOST POPULAR PRODUCTS</span></h4>
     </div>
 
-    <div class="popular_products_cont">
         <div class="row_cont">
             <div class="row-fluid .clearfix">
                 <div class="col-xs-6 col-sm-6 col-md-6">
@@ -850,8 +857,6 @@
                 </div>
             </div>
         </div>
-
-    </div>
 </div>
 
 
@@ -867,6 +872,7 @@
     </div>
 </div>
 
+<!--Choose us block-->
 <div class="choose_us clearfix">
     <h4><span>WHY CHOOSE US ?</span></h4>
 
@@ -954,25 +960,6 @@
 
                     <div>
                         <div class="bold"><p>Get In Touch</p></div>
-
-                        <!-- <table>
-                             <tr>
-                                 <td><img src="src/marker.png" alt=""/></td>
-                                 <td>
-                                     Units 1-8 RJ Hall Industrial Estate, Wilson Street, Belfast BT13 2GA, N.Ireland
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <td><img src="src/phone%20copy.png" alt=""/></td>
-                                 <td>
-
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <td><img src="src/mail.png" alt=""/></td>
-                                 <td></td>
-                             </tr>
-                         </table> -->
                         <div class="quick_contactLink">
                             <ul>
                                 <li class="map_link">
@@ -1033,12 +1020,6 @@
 </div>
 
 
-<script type='text/javascript'>
-    function test() {
-        £("#wrap_head").height(£("#head").height());
-    }
-</script>
-
 <script>
     window.onscroll = function () {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -1076,8 +1057,6 @@
         }
     }
 </script>
-
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

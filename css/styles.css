@@ -1,6 +1,15 @@
+@font-face {
+    font-family: customFont;
+    src: url(../src/font/Montserrat-Bold.otf);
+    /*font-weight: bold;*/
+}
+
+
+
 html,
 body {
     height: 100%;
+    /*font-family: customFont;*/
     /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -68,10 +77,21 @@ header{
 
 }
 
+.nav-justified>li {
+    display: block;
+    width: auto;
+    float: left;
+}
+
+.mini_nav_item{
+    padding-left: 15px;
+    display: inline;
+}
 
 .nav>li>a:hover{
-    background: black;
+    background: white;
     color: #417a8b;
+    text-decoration: underline;
 }
 
 .navbar-header{
@@ -199,10 +219,17 @@ td.cart_item {
 }
 
 .mini_nav{
-    margin: 10px 0;
+    /*margin: 10px 0;*/
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.nav-justified>li:hover{
+    text-decoration: dashed;
 }
 
 .list-group{
+    margin-top: 10px;
     padding-left: 15px;
 }
 
@@ -214,12 +241,13 @@ td.cart_item {
 }
 
 .list-group-item>a {
+    cursor: pointer;
     color: black;
 }
 
 .list-group-item-drop{
     border:none;
-    padding: 5px 0 0 30px;
+    padding: 5px 0 0 20px;
 }
 
 .new{
