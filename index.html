@@ -138,9 +138,9 @@
 <aside class="col-md-5 col-sm-5 hidden-xs" id="sideBar" style=" position:fixed;">
 <!--Our products blue button without action-->
 <button type="button" class="btn products" aria-label="Left Align">
-                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
-                        Our Products
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="margin-right: 15px">
                     </span>
+    Our Products
 </button>
 
 <!-- #accordion - container for left-bar dropdowns-->
@@ -752,7 +752,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -768,7 +768,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -784,7 +784,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -800,7 +800,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -816,7 +816,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -832,7 +832,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -848,7 +848,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -864,7 +864,7 @@
                             £20.00
                         </div>
                         <div class="popular_btn">
-                            <button type="button" class="btn products popular_products_btn">
+                            <button type="button" class="btn  popular_products_btn">
                                 Buy Now
                             </button>
                         </div>
@@ -997,9 +997,8 @@
                     </div>
 
                 </div>
-                <div class="col-md-2 col-sm-10 "></div>
 
-                <div class="col-md-5 col-sm-10 no-pad ">
+                <div class="col-md-7 col-sm-12 no-pad ">
 
                     <div>
                         <div class="bold"><p>Get Social</p></div>
@@ -1062,7 +1061,11 @@
             document.getElementById("inline").className = "hidden hidden-xs clearfix";
         }
 
-        if ($("#sideBar").height() + scrolled + 40 > $("#pageWithoutFooter").height()) {
+        if($("#sideBar").height() > window.innerHeight){
+            document.getElementById("sideBar").style.position = "absolute";
+            document.getElementById("sideBar").style.top = 90 + 'px';
+        } else if
+        ($("#sideBar").height() + scrolled + 40 > $("#pageWithoutFooter").height()) {
 
             if (document.getElementById("sideBar").style.position == "fixed") {
                 document.getElementById("sideBar").style.position = "absolute";

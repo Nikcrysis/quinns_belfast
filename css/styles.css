@@ -1,7 +1,49 @@
 @font-face {
-    font-family: customFont;
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
     src: url(../src/font/Montserrat-Bold.otf);
-    /*font-weight: bold;*/
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-ExtraBold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-SemiBold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-UltraLight.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../src/font/Montserrat-Hairline.otf);
+    font-weight: 100;
 }
 
 
@@ -10,10 +52,10 @@ html,
 body {
     height: 100%;
     color:#585858;
-    /*font-family: customFont;*/
+    font-family: Montserrat;
+    font-size: 12px;
     /* The html and body elements cannot have any padding or margin. */
 }
-
 
 
 a{
@@ -38,6 +80,7 @@ ul
 header{
     background-color: black;
     padding: 10px 0;
+
 }
 
 .header{
@@ -200,7 +243,7 @@ td.cart_item {
     /*min-height: 100%;*/
     display: block;
     /*height:650px;*/
-    max-width:200px;
+    max-width:220px;
     /*background-color: #1b6d85;*/
     padding: 10px;
     z-index: 5;
@@ -255,17 +298,20 @@ td.cart_item {
     float:right;
     display: block;
     color:#ffffff;
-    background-color: red;
+    background-color: #f0547c;
     border-radius: 5px;
-    padding: 0px 3px;
+    padding: 0px 7px;
 }
 
 .products{
     background: linear-gradient(#89bae5,#3a84c1);
     color:white;
     border:none;
-    padding: 10px 15px;
-    width: 180px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    min-width: 160px;
+    max-width: 220px;
     margin-bottom: 5px;
 }
 
@@ -302,7 +348,8 @@ background-image: none !important;
 .offer_item{
     height:140px ;
     width: 140px;
-    background-color: #f1ebeb;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
     margin:0;
     z-index: 8;
@@ -353,9 +400,9 @@ background-image: none !important;
 h4 {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #585858;;
+    border-bottom: 1px solid #e5e5e5;;
     line-height: 0.1em;
-    margin: 10px 0 20px;
+    margin: 10px 0 30px;
 }
 
 h4 span {
@@ -407,11 +454,13 @@ hr {
 .cost{
     position: relative;
     text-align: center;
+    font-size: 12px;
     top:70px;
 }
 
 .cost:before{
     content: "Starting From \a" attr(title);
+    font-size: 12px;
     white-space: pre;
     position: relative;
 
@@ -420,12 +469,17 @@ hr {
 .popular_btn{
     position: relative;
     margin: 0 auto;
-    width:100px;
-    top: 70px;
+    width:90px;
+    top: 80px;
 }
 
 .popular_products_btn{
-    width:100px;
+    background: linear-gradient(#89bae5,#3a84c1);
+    color:white;
+    border:none;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    width:90px;
 }
 
 .desc{
@@ -436,7 +490,7 @@ hr {
     padding:15px;
     border-radius: 5px;
     /*background-color: violet;*/
-    padding: 3.5%;
+    padding: 5%;
 }
 
 
@@ -513,7 +567,7 @@ hr {
 
 .get_social_item{
     float: left;
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 .get_social_item.first{
@@ -521,7 +575,7 @@ hr {
 }
 
 .footer_cont.main a{
-    color:  #ffffff;
+    color:  #cccccc;
 }
 
 
