@@ -31,7 +31,7 @@
                 <div class="row">
 
                     <!--The logo in the header-->
-                    <aside class="col-md-5 col-sm-5 hidden-xs" id="myElement">
+                    <aside class="col-md-5 col-sm-4 hidden-xs" id="myElement">
                         <div style="margin:0 auto; width:120px; height:56px" id="smallLogo">
                             <div>
                                 <a href="#">
@@ -42,7 +42,7 @@
                     </aside>
 
                     <!--Parametrs for collapse of navigation bar for xs and sm devices-->
-                    <section class="col-md-14 col-sm-11" id="navBar">
+                    <section class="col-md-14 col-sm-15" id="navBar">
                         <nav class="navbar navbar-inverse ">
                             <div class="navbar-header nav-btn">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -87,17 +87,17 @@
                     </section>
 
                     <!--Buyers cart section for 0 scroll-->
-                    <section class="col-md-5 col-sm-5 hidden-xs cart" id="cart">
+                    <section class="col-md-5 col-sm-1 hidden-xs cart" id="cart">
                         <table class="tbl">
                             <tr>
                                 <td class="cart_item">
                                     <div class="items_count">0</div>
                                 </td>
-                                <td>items(£ 0.00)</td>
+                                <td class="hidden-sm">items(£ 0.00)</td>
                             </tr>
                             <tr>
                                 <td><img src="src/cart.png"></td>
-                                <td>In Your Cart</td>
+                                <td class="hidden-sm">In Your Cart</td>
                             </tr>
                         </table>
                     </section>
@@ -596,17 +596,32 @@
 <!-- Mini navigation-->
 <div class="mini_nav row-fluid">
     <ul class="nav nav-pills nav-justified">
-        <div class="col-md-6">
-            <li role="presentation"><a href="#"><img src="src/help.png" alt=""/> <div class="mini_nav_item">Help Online</div></a></li>
+        <div class="col-md-6 col-sm-12">
+            <li role="presentation">
+
+                    <img src="src/help.png" alt=""/>
+                <a href="#">
+                <div class="mini_nav_item">Help Online</div></a></li>
         </div>
-        <div class="col-md-6">
-            <li role="presentation"><a href="#"><img src="src/phone.png" alt=""/> <div class="mini_nav_item">028 9032 3552</div></a></li>
+        <div class="col-md-6 col-sm-12">
+            <li role="presentation">
+
+                    <img src="src/phone.png" alt=""/>
+                <a href="#">
+                <div class="mini_nav_item">028 9032 3552</div></a></li>
         </div>
-        <div class="col-md-6">
-            <li role="presentation"><a href="#"><img src="src/user.png" alt=""/> <div class="mini_nav_item">Login/Register</div></a></li>
+        <div class="col-md-6 col-sm-12">
+            <li role="presentation">
+                    <img src="src/user.png" alt=""/>
+                <a href="#">
+                <div class="mini_nav_item">Login/Register</div></a></li>
         </div>
-        <div class="col-md-6">
-            <li role="presentation"><a href="#"><img src="src/pen.png" alt=""/> <div class="mini_nav_item">Get Quote</div></a></li>
+        <div class="col-md-6 col-sm-12">
+            <li role="presentation">
+
+                    <img src="src/pen.png" alt=""/>
+                <a href="#">
+                <div class="mini_nav_item">Get Quote</div></a></li>
         </div>
     </ul>
 </div>
@@ -677,7 +692,7 @@
                         Request a Free
                         Quote
                     </div>
-                    FROM QUINNS
+                    <span>FROM QUINNS</span>
                 </div>
             </div>
         </div>
@@ -690,7 +705,7 @@
                     <div class="bold">Estimate
                         Your Requirment
                     </div>
-                    ONLINE
+                    <span>ONLINE</span>
                 </div>
             </div>
         </div>
@@ -700,7 +715,7 @@
                 </div>
                 <div class="offer_text">
                     <div class="bold">Pay Top-Up</div>
-                    PAYMENT
+                    <span>PAYMENT</span>
                 </div>
             </div>
         </div>
@@ -710,7 +725,7 @@
                 </div>
                 <div class="offer_text">
                     <div class="bold">Track Your Quote</div>
-                    STATUS
+                    <span>STATUS</span>
                 </div>
             </div>
         </div>
@@ -1026,7 +1041,9 @@
         if (he != -20 & he != 0 & he != $("#side_bar").height()) {
             var he = $("#side_bar").height();
         }
+
         //document.getElementById('showScroll').innerHTML = he + 'px';
+
         if (scrolled > 106) {
             document.getElementById("sideBar").style.margin = "-30px 0px 0px 0px";
             document.getElementById("smallLogo").style.width = "80px";

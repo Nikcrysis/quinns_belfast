@@ -9,6 +9,7 @@
 html,
 body {
     height: 100%;
+    color:#585858;
     /*font-family: customFont;*/
     /* The html and body elements cannot have any padding or margin. */
 }
@@ -16,7 +17,7 @@ body {
 
 
 a{
-    color:black;
+    color:#585858;
 }
 
 ul
@@ -242,7 +243,7 @@ td.cart_item {
 
 .list-group-item>a {
     cursor: pointer;
-    color: black;
+    /*color: black;*/
 }
 
 .list-group-item-drop{
@@ -334,6 +335,10 @@ background-image: none !important;
     padding: 0 5px;
 }
 
+.offer_text span{
+    color:#4a8ecb ;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -348,18 +353,20 @@ background-image: none !important;
 h4 {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #585858;;
     line-height: 0.1em;
     margin: 10px 0 20px;
 }
 
 h4 span {
     font-weight: bold;
-    background:#fff;
+    color: #4a8ecb;
+    background: #ffffff;
     padding:0 10px;
 }
 
 .popular_products{
+    color: #4a8ecb;
     width:140px;
     height:250px;
     margin:0 auto;
@@ -386,11 +393,13 @@ h4 span {
 hr.line{
     position: relative;
     top:70px;
+
 }
 
 hr {
+
     border: 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #4a8ecb;;
     margin: 3px auto;
     width: 75%;
 }
